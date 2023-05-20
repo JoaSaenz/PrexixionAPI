@@ -5,6 +5,7 @@
  */
 package com.joa.gerencia.api.student;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Period;
 import javax.persistence.*;
@@ -15,7 +16,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table
-public class Student {
+public class Student implements Serializable {
     @Id
     @SequenceGenerator(
             name = "student_sequence",  
